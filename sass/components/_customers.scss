@@ -8,14 +8,6 @@
     color: var(--primary-text-color)
 }
 
-.customers__list {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-    gap: 30px;
-}
-
 .customers__item {
     display: flex;
     width: 170px;
@@ -44,3 +36,35 @@
         fill: var(--accent-color);
         }
 }
+
+@media screen and (max-widt: 767px) {
+    .customers__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers__list {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        gap: 30px;
+        }
+}
+
+
