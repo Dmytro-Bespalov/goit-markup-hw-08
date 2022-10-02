@@ -29,6 +29,11 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+            <svg class="open-mobile-menu-btn__icon">
+                <use href="./images/sprite.svg#icon-menu__burger"></use>
+            </svg>
+        </button>
             <ul class="list contacts">
                 <li class="contacts__item">
                     <div class="contacts__item_box">
@@ -49,6 +54,32 @@
                 </div>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu-nav__item">
+                        <a href="./index.html" class="link">Студія</a></li>
+                    <li class="mobile-menu-nav__item">
+                        <a href="./portfolio.html" class="link">Портфоліо</a></li>
+                    <li class="mobile-menu-nav__item">Контакти</li>
+                </ul>
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts__item">+38 096 111 11 11</li>
+                    <li class="mobile-menu-contacts__item">info@devstudio.com</li>
+                </ul>
+                <ul class="mobile-menu-networks list">
+                    <li class="mobile-menu-networks__item after">Instagram</li>
+                    <li class="mobile-menu-networks__item after">Twitter</li>
+                    <li class="mobile-menu-networks__item after">Facebook</li>
+                    <li class="mobile-menu-networks__item">LinkedIn</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -149,7 +180,7 @@
             </ul>
             </div>
         </section>
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="list team-list">
@@ -544,7 +575,7 @@
                 </svg>
             </button>
         </form>
-    </div>
+    </div> -->
 </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -594,5 +625,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

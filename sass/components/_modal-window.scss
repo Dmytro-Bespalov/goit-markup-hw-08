@@ -18,13 +18,21 @@
 .modal {
     position: absolute;
     background-color: #FFFFFF;
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
     padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-button {
@@ -51,11 +59,17 @@
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+}
+
+@media creen and (min-width: 1200px) {
+    .modal-form-title {
+        line-height: 23px;
+    }
 }
 
 .modal-form-label-name {
@@ -70,8 +84,8 @@
 
 .modal-form-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     cursor: pointer;
     text-decoration-line: underline;
@@ -80,8 +94,8 @@
 
 .modal-form-checkbox-label {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -95,6 +109,18 @@
             border-radius: 2px;
             margin-right: 9px;
         }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form-checkbox-label {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .modal-form-link {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .modal-form {

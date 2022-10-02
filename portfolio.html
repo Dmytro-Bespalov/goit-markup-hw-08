@@ -31,6 +31,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="open-mobile-menu-btn">
+                <svg class="open-mobile-menu-btn__icon">
+                    <use href="./images/sprite.svg#icon-menu__burger"></use>
+                </svg>
+            </button>
             <ul class="list contacts">
                 <li class="contacts__item">
                     <div class="contacts__item_box">
@@ -52,21 +57,49 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu-nav__item">
+                        <a href="./index.html" class="link">Студія</a>
+                    </li>
+                    <li class="mobile-menu-nav__item">
+                        <a href="./portfolio.html" class="link">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu-nav__item">Контакти</li>
+                </ul>
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts__item">+38 096 111 11 11</li>
+                    <li class="mobile-menu-contacts__item">info@devstudio.com</li>
+                </ul>
+                <ul class="mobile-menu-networks list">
+                    <li class="mobile-menu-networks__item">Instagram</li>
+                    <li class="mobile-menu-networks__item">Twitter</li>
+                    <li class="mobile-menu-networks__item">Facebook</li>
+                    <li class="mobile-menu-networks__item">LinkedIn</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section class="section">
             <div class="container">
             <h1 hidden>Портфолио</h1>
         <ul class="list portfolio-nav">
-            <li class="portfolio-nav-link">
-                <button class="portfolio-nav-button" type="button">Все</button>
-            </li>
-            <li class="portfolio-nav-link">
-                <button class="portfolio-nav-button" type="button">Веб-сайты</button>
-            </li>
-            <li class="portfolio-nav-link">
-                <button class="portfolio-nav-button" type="button">Приложения</button>
-            </li>
+                <li class="portfolio-nav-link">
+                    <button class="portfolio-nav-button" type="button">Все</button>
+                </li>
+                <li class="portfolio-nav-link">
+                    <button class="portfolio-nav-button" type="button">Веб-сайты</button>
+                </li>
+                <li class="portfolio-nav-link">
+                    <button class="portfolio-nav-button" type="button">Приложения</button>
+                </li>
             <li class="portfolio-nav-link">
                 <button class="portfolio-nav-button" type="button">Дизайн</button>
             </li>
@@ -565,5 +598,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
