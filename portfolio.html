@@ -108,7 +108,7 @@
             </li>
         </ul>
         <ul class="list portfolio-list">
-            <li class="portfolio-list-item">
+            <li class="portfolio-list-item even">
                 <a href="" class="portfolio-link">
                     <div class="portfolio-overlay-box">
                         <picture>
@@ -202,7 +202,7 @@
                     <p class="portfolio-description">Дизайн</p></div>
                 </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list-item even">
                 <a href="" class="portfolio-link">
                     <div class="portfolio-overlay-box">
                         <picture>
@@ -296,7 +296,7 @@
                     <p class="portfolio-description">Маркетинг</p></div>
                 </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list-item even">
                 <a href="" class="portfolio-link">
                     <div class="portfolio-overlay-box">
                         <picture>
@@ -390,7 +390,7 @@
                     <p class="portfolio-description">Веб-сайт</p></div>
                 </a>
             </li>
-            <li class="portfolio-list-item">
+            <li class="portfolio-list-item even">
                 <a href="" class="portfolio-link">
                     <div class="portfolio-overlay-box">
                         <picture>
@@ -536,20 +536,21 @@
     </main>
     <footer class="footer">
         <div class="container footer-flex">
-            <div>
-                <a class="logo-footer" href="" lang="en"><span class="logo-footer-text"><span
-                            class="logo-footer-web">Web</span><span class="logo-footer-studio">Studio</span></span> </a>
+            <div class="footer-wrapper">
+                <a class="footer-logo" href="" lang="en"><span class="footer-logo__text"> <span
+                            class="footer-logo__text_accent">Web</span><span
+                            class="footer-logo__text_default">Studio</span></span> </a>
                 <address>
-                    <ul class="list">
-                        <li class="adress-item">
-                            <a class="adress-link" href="https://goo.gl/maps/BZwKoePdumWKBTUe7" target="_blank"
-                                rel="noopener noreferrer">Киев, пр-т Леси Украинки, 26</a>
+                    <ul class="list address">
+                        <li class="footer-contacts">
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow" class="location link">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="adress-item">
-                            <a class="adress-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="footer-contacts">
+                            <a href="mailto:info@devstudio.com" class="link footer-contacts__item">info@devstudio.com</a>
                         </li>
-                        <li class="adress-item">
-                            <a class="adress-contacts" href="mailto:info@example.com">info@example.com</a>
+                        <li class="footer-contacts">
+                            <a href="tel:+380961111111" class="link footer-contacts__item">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -587,15 +588,21 @@
                     </li>
                 </ul>
             </div>
-            <form class="footer-form">
-                <p class="footer-form-subscribe">Підпишіться на розсилку</p>
-                <input type="email" name="user-email-subscription" placeholder="E-mail" class="subscription-input">
-                <button type="submit" class="subsription-button">Підписатися
-                    <svg class="icon-send" width="24" height="24">
-                        <use href="./images/sprite.svg#icon-send"></use>
-                    </svg>
-                </button>
-            </form>
+            <div class="mail-input-wrapper">
+                <p class="mail-input-title">Підпишіться на розсилку</p>
+                <form class="mail-input">
+                    <label class="mail-input-field">
+                        <input type="email" class="mail-input-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            name="user_email" placeholder="E-mail" />
+                    </label>
+                    <button type="submit" class="mail-input-btn">
+                        <span class="mail-input-btn-text">Підписатися</span>
+                        <svg lang="en" aria-label="mail input send icon" width="24px" height="24px" class="send-icon">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <script src="./js/menu.js"></script>

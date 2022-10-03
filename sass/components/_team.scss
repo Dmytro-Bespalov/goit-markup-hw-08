@@ -1,10 +1,96 @@
-@media screen and (min-width: 1200px) {
-    .team-item {
-        width: 270px;
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list {
+    margin-top: 50px;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    padding-bottom: 30px;
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+}
+
+.social-list {
+    display: flex;
+    padding-left: 32;
+    padding-right: 32;
+    padding-top: 16;
+    padding-bottom: 30;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color)
+    }
+}
+
+.social-list-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-list-link:hover &,
+    .social-list-link:focus & {
+        fill: #FFFFFF;
+    }
+}
+
+.social-list-item {
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .team-list {
+        display: block;
     }
 
-    .team-item:not(:last-child) {
-        margin-right: 30px;
+    .team-item {
+        width: 450px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -20,83 +106,10 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .team-item:not(:last-child) {
-                margin-bottom: 30px;
-            }
-        
-    
-        .team-title {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.16;
-            text-align: center;
-            letter-spacing: 0.03em;
-            margin-bottom: 30px;
-            margin-top: 60px;
-        }
-    
-        .team-name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.18;
-            text-align: center;
-            letter-spacing: 0.03em;
-            padding-top: 30px;
-        }
-    
-        .team-position {
-            font-size: 16px;
-            line-height: 1.18;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: var(--secondary-text-color);
-            margin-top: 10px;
-        }
-    
-        .social-list {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-    
-        .social-list-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-            &:hover,
-            &:focus {
-                background-color: var(--accent-color)
-            }
-        }
-    
-        .social-list-icon {
-            fill: #AFB1B8;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-            .social-list-link:hover &,
-            .social-list-link:focus & {
-                fill: #FFFFFF;
-            }
-        }
-    
-        .social-list-item {
-            margin-top: 16px;
-        }
-    
-        .team-item {
-            background-color: #FFFFFF;
-            padding-bottom: 30px;
-            width: 450px;
-            background: #FFFFFF;
-            box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-            border-radius: 0px 0px 4px 4px;
-        }
+@media screen and (min-width: 1199px) {
+    .team-item {
+        width: 270px;
+    }
 }
 
 
